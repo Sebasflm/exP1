@@ -27,7 +27,7 @@ public class Ventana {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (codigo.getText().isEmpty() || marca.getText().isEmpty() || anio.getText().isEmpty() || cantidad.getText().isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos obligatorios.", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Por favor, complete todos los campos necesarios.");
                     return;
                 }
                 Dispositivos dispositivo= new Dispositivos(codigo.getText(),marca.getText(),
@@ -47,7 +47,7 @@ public class Ventana {
             public void actionPerformed(ActionEvent e) {
 
                 if (codigo.getText().isEmpty() || cantidad.getText().isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "Por favor, complete los campos de código y cantidad.", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Por favor, complete los campos de código y cantidad.");
                     return;
                 }
                 try {

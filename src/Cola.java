@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -48,7 +47,9 @@ public class Cola {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        dispositivos.forEach(dispositivo -> sb.append(dispositivo.toString()).append("\n"));
+        for (Dispositivos dispositivo1 : dispositivos) {
+            sb.append(dispositivo1.toString()).append("\n");
+        }
         return sb.toString();
     }
 }
